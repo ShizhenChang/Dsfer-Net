@@ -75,7 +75,6 @@ def main(args):
     # Create network   
     model = MyNet(n_classes=args.num_classes, beta=args.beta, dim = args.project, numhead = args.numhead)
     model = model.cuda()
-    #writer.add_graph(model, input_to_model = (torch.rand(1, 3, 256, 256), torch.rand(1, 3, 256, 256)))
 
     optimizer = optim.Adam(model.parameters(),
                         lr=args.learning_rate, weight_decay=args.weight_decay)
