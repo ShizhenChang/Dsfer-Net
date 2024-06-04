@@ -112,4 +112,4 @@ The authors would like to thank the authors of all comparative methods for shari
 
 ### License
 
-This repo is distributed under [MIT License](https://github.com/ShizhenChang/Dsfer-Net/blob/main/LICENSE.txt). The code can be used for academic purposes only.
+This repo is distributed under [MIT License](https://github.com/ShizhenChang/Dsfer-Net/blob/main/LICENSE). The code can be used for academic purposes only.
