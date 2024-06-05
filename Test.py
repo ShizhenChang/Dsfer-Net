@@ -7,7 +7,6 @@ Created on Fri May  6 17:10:55 2022
 
 import argparse
 import numpy as np
-import time
 import torch
 from torch.utils import data
 from utils.tools import *
@@ -56,9 +55,6 @@ def main(args):
     
     model = MyNet(n_classes=args.num_classes, beta=args.beta, dim = args.project, numhead = args.numhead)
 
-
-    num_params = sum(p.numel() for p in model.parameters())
-    print("Number of parameters in the model:", num_params)
     saved_state_dict = torch.load(restore_from)
     model.load_state_dict(saved_state_dict)
 
@@ -71,7 +67,6 @@ def main(args):
     FN_all = np.zeros((args.num_classes, 1))
     n_valid_sample_all = 0
     F1 = np.zeros((args.num_classes, 1))
-    test_start_time = time.time()
     for _, batch in enumerate(test_loader):  
         image1, image2, label,_, name = batch
         label = label.squeeze().numpy()
@@ -89,10 +84,7 @@ def main(args):
         TN_all += TN
         FN_all += FN
         n_valid_sample_all += n_valid_sample
-    Infer_time = time.time() - test_start_time
-    Avg_infer_time = Infer_time / len(test_loader)
-    print('Inference time of the network is: %.4f' %(Infer_time) )
-    print('Averge inference time of the network is: %.4f' %(Avg_infer_time) )
+
     P =TP_all*1.0 / (TP_all + FP_all + epsilon)
     R = TP_all*1.0 / (TP_all + FN_all + epsilon)
     F1 = 2.0*P*R / (P + R + epsilon)

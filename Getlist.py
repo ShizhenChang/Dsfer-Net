@@ -21,13 +21,13 @@ def main(args):
         print('loading the LEVIR-CD dataset...OK')
         for dirpath, dirnames, filenames in os.walk(rootDir_train):
             for i in range(len(filenames)):
-                f_train.writelines('/LEVIR-CD/tiles/train/A/'+str(filenames[i])+'\n')
+                f_train.writelines('LEVIR-CD/tiles/train/A/'+str(filenames[i])+'\n')
         for dirpath, dirnames, filenames in os.walk(rootDir_val):
             for i in range(len(filenames)):
-                f_val.writelines('/LEVIR-CD/tiles/val/A/'+str(filenames[i])+'\n')
+                f_val.writelines('LEVIR-CD/tiles/val/A/'+str(filenames[i])+'\n')
         for dirpath, dirnames, filenames in os.walk(rootDir_test):
             for i in range(len(filenames)):
-                f_test.writelines('/LEVIR-CD/tiles/test/A/'+str(filenames[i])+'\n')
+                f_test.writelines('LEVIR-CD/tiles/test/A/'+str(filenames[i])+'\n')
 
     if args.dataID==2:
         rootDir = args.root_path +'/WHU_Building/tiles/A'
@@ -41,7 +41,7 @@ def main(args):
             random.shuffle(filenames)
         for i in range(len(filenames)): 
             if i<int(np.floor(len(filenames)*perc[0])):
-                f_train.writelines('/WHU_Building/tiles/A/'+str(filenames[i])+'\n')
+                f_train.writelines('WHU_Building/tiles/A/'+str(filenames[i])+'\n')
             elif i<int(np.floor(len(filenames)*(perc[0]+perc[1]))):
                 f_val.writelines(rootDir+'/'+str(filenames[i])+'\n')
                 #print(filenames[i])
@@ -57,13 +57,13 @@ def main(args):
         print('loading the CDD dataset...OK')
         for dirpath, dirnames, filenames in os.walk(rootDir_train):
             for i in range(len(filenames)):
-                f_train.writelines('/CDD/train/A/'+str(filenames[i])+'\n')
+                f_train.writelines('CDD/train/A/'+str(filenames[i])+'\n')
         for dirpath, dirnames, filenames in os.walk(rootDir_val):
             for i in range(len(filenames)):
-                f_val.writelines('/CDD/val/A/'+str(filenames[i])+'\n')
+                f_val.writelines('CDD/val/A/'+str(filenames[i])+'\n')
         for dirpath, dirnames, filenames in os.walk(rootDir_test):
             for i in range(len(filenames)):
-                f_test.writelines('/CDD/test/A/'+str(filenames[i])+'\n')
+                f_test.writelines('CDD/test/A/'+str(filenames[i])+'\n')
 
 
     f_train.close()
@@ -73,6 +73,6 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--root_path', type=str, default='root/datasets/Building_Change')
+    parser.add_argument('--root_path', type=str, default='/root/datasets/Building_Change')
     parser.add_argument('--dataID', type=int, default=1)
     main(parser.parse_args())

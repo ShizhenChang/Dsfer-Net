@@ -75,6 +75,7 @@ def main(args):
     # Create network   
     model = MyNet(n_classes=args.num_classes, beta=args.beta, dim = args.project, numhead = args.numhead)
     model = model.cuda()
+    #writer.add_graph(model, input_to_model = (torch.rand(1, 3, 256, 256), torch.rand(1, 3, 256, 256)))
 
     optimizer = optim.Adam(model.parameters(),
                         lr=args.learning_rate, weight_decay=args.weight_decay)
@@ -90,7 +91,7 @@ def main(args):
     pool2 = nn.MaxPool2d(16, stride=16)
     for batch_id, src_data in enumerate(src_loader):
         if batch_id==args.num_steps_stop:
-            break
+            break 
         tem_time = time.time()
         model.train()
         optimizer.zero_grad()

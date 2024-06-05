@@ -1,6 +1,6 @@
 # Dsfer-Net: A Deep Supervision and Feature Retrieval Network for Bitemporal Change Detection Using Modern Hopfield Network
 
-[Shizhen Chang](https://scholar.google.com/citations?user=tC5_nA8AAAAJ&hl=zh-CN&oi=ao), <a href="https://github.com/mkk20">Michael Kopp</a> and <a href="http://pedram-ghamisi.com/">Pedram Ghamisi</a>
+[Shizhen Chang](https://shizhenchang.github.io/), [Michael Kopp](https://github.com/mkk20), [Pedram Ghamisi](http://pedram-ghamisi.com/), and [Bo Du](https://scholar.google.com/citations?user=Shy1gnMAAAAJ&hl=zh-CN)
 
 ![Flowchart](Figure/DsferNet.png)
 
@@ -30,11 +30,11 @@ Three datasets are used in this repo: LEVIR-CD dataset, WHU-CD dataset, and CDD 
 
 Detailed settings of the datasets can be found in our paper, and the cropped image can also be downloaded from: 
 
-** LEVIR-CD: https://drive.google.com/file/d/1gjWOZLsRKLVsK80YJf_2BEPLX9PTI_W9/view?usp=drive_link
+** LEVIR-CD: [Google Drive](https://drive.google.com/file/d/1gjWOZLsRKLVsK80YJf_2BEPLX9PTI_W9/view?usp=drive_link)
 
-** WHU-CD: https://drive.google.com/file/d/1HodqUkd5yidd0vo_tMBtTyFHqmDD38zg/view?usp=drive_link
+** WHU-CD: [Google Drive](https://drive.google.com/file/d/1HodqUkd5yidd0vo_tMBtTyFHqmDD38zg/view?usp=drive_link)
 
-** CDD-CD: https://drive.google.com/file/d/1Q4Os8YPT2AUpqE4MhdPKxm6NAgCnOkBN/view?usp=drive_link
+** CDD-CD: [Google Drive](https://drive.google.com/file/d/1Q4Os8YPT2AUpqE4MhdPKxm6NAgCnOkBN/view?usp=drive_link)
 
 The path of the images is orgarnied as follow: 
 ```bash
