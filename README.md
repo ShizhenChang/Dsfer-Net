@@ -98,10 +98,11 @@ python Test.py
 For researchers who are interested in using this project, please cite the following paper:
 
 ```
-@article{chang2022Dsfernet,
-  title={Dsfer-Net: A Deep Supervision and Feature Retrieval Network for Bitemporal Change Detection Using Modern Hopfield Network},
+@article{chang2023dsfer,
+  title={Dsfer-Net: A Deep Supervision and Feature Retrieval Network for Bitemporal Change Detection Using Modern Hopfield Networks},
   author={Chang, Shizhen and Kopp, Michael and Ghamisi, Pedram},
-  year={2022}
+  journal={arXiv preprint arXiv:2304.01101},
+  year={2023}
 }
 ```
 
