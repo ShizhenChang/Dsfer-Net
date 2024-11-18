@@ -5,7 +5,7 @@
 ![Flowchart](Figure/DsferNet.png)
 
 ## Introduction
-This project concludes the official Pytorch implementation for applying Hopfield layer for deep feature retrieval and aggregration in our paper **Dsfer-Net: A Deep Supervision and Feature Retrieval Network for Bitemporal Change Detection Using Modern Hopfield Network** which has been conducted at the [Institute of Advanced Research in Artificial Intelligence (IARAI)](https://www.iarai.ac.at/).
+This project concludes the official Pytorch implementation for applying Hopfield layer for deep feature retrieval and aggregration in our paper [**Dsfer-Net: A Deep Supervision and Feature Retrieval Network for Bitemporal Change Detection Using Modern Hopfield Network**](https://arxiv.org/pdf/2304.01101) which has been conducted at the [Institute of Advanced Research in Artificial Intelligence (IARAI)](https://www.iarai.ac.at/).
 
 ## Clues of the project:
  1. [Preliminaries](#preliminaries)
