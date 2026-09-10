@@ -76,7 +76,7 @@ The path of the images is orgarnied as follow:
 python Train.py
 ```
 
-Alternatively, you can download our [pretrained models](https://drive.google.com/file/d/16SmembbauK8AmEIrdA3XAiNvi5uAzWp1/view?usp=sharing) for a quick look.
+Alternatively, you can download our [pretrained models](https://drive.google.com/file/d/1nwCUWNvc0_15e_wA-KB-gy1UPKThML5T/view?usp=sharing) for a quick look.
 
 - Evaluating the performance on the test set:
 
